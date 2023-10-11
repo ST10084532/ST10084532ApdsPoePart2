@@ -1,0 +1,45 @@
+GET https://localhost:3000/api HTTP/1.1
+###
+GET https://localhost:3000/api/test HTTP/1.1
+###
+GET https://localhost:3000/api HTTP/1.1
+###
+GET https://localhost:3000/api/products HTTP/1.1
+###
+POST https://localhost:3000/api/proucts HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Energade",
+    "catagory": "Drink"
+}
+###
+
+DELETE https://localhost:3000/api/proucts/612d57739f7c072240b2c061 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer 
+###
+POST https://localhost:3000/api/users/signup HTTP/1.1
+content-Type:application/application/json
+
+{
+    "username": "test",
+    "password": "youwilneverknow"
+}
+###
+POST https://localhost:3000/api/users/login HTTP/1.1
+content-Type: application/json
+
+{
+    "username": "testing3",
+    "password": "takeaguess"
+}
+###
+POST https://localhost:3000/api/product HTTP/1.1
+content-Type: application/json
+Authorization: Bearer 
+{
+    "name": "coka cola",
+    "catagory": "Fizzy drink"
+}
+###
